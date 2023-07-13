@@ -5,8 +5,9 @@
   "main": "index.mjs",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/index.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon":"nodemon src/index.mjs"
   },
   "author": "",
   "license": "ISC",

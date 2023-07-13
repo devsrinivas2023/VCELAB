@@ -14,4 +14,7 @@ To create The application
 ```
 npm start
 ```
-
+# To nodemon developer mode
+```
+npm run nodemon
+```

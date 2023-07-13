@@ -50,7 +50,18 @@ app.delete("/student/:id",(req,res)=>{
     service.data= temp;
     res.sendStatus(200);
 });//testing completed
-
+app.put("/student/:id",(req,res)=>{
+    const data = req.body;
+    const id = req.params.id;
+    if(data.name!=undefined && data.college!=undefined){
+        res.sendStatus(service.updatestudent(data,id)?202:204);
+    }else if(data.name!=undefined){
+        res.sendStatus(service.updatename(data,id)?202:204);
+    }else if(data.college!=undefined){
+        res.sendStatus(service.updatecollege(data,id)?202:204);
+    }
+    res.status(204).send("No content");
+})//testing complted
 //express configuration
 try{
     app.listen(port,()=>{
