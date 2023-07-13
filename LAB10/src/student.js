@@ -1,11 +1,11 @@
 
 export class Student{
-    data = {};
+    data = [];
     getInfo() {
         return this.data;
       }
     save(node){
-        this.data.push(node);
+        this.data.push(node)
         return true;
     }
 }
