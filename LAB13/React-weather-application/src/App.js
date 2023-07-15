@@ -1,33 +1,30 @@
 import './App.css';
-import Box from '@mui/material/Box';
-import Header from './componets/Header'
+import {AppBar, Toolbar, Typography,Stack} from '@mui/material'
+import { styled } from '@mui/material/styles';
 import Body from './componets/Body';
-import Output from './componets/Output';
-import { useState } from 'react';
-import axios from 'axios';
+import GpsComponent from './componets/GpsComponent';
+import { Routes,Route, BrowserRouter } from 'react-router-dom';
+import CityComponent from './componets/CityComponent';
 export default function App(){
-    const[latitude,setLatitude]=useState("");
-    const[longitude,setLongitude]=useState("");
-    const[data,setData]=useState([]);
-    const getValue=(values)=>{
-        navigator.geolocation.getCurrentPosition((pos)=>{
-           // console.log(pos.coords)
-            setLatitude(pos.coords.latitude);
-            setLongitude(pos.coords.longitude);
-        })
-       axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=9de243494c0b295cca9337e1e96b00e2`)
-       .then((res)=>{
-         setData(res.data);
-        })
-        .catch((error)=>{
-            console.log(error);
-       })
-    }
     return<>
-        <Box  sx={{ flexGrow: 1 }}>
-            <Header/>
-            <Body get={getValue}/>
-            <Output data={data}/>
-        </Box>
+     <AppBar position="static" sx={{height:70,borderRadius:32,marginTop:12,width:1000,marginLeft:6}}>
+         <Typography variant="h5" component="div" sx={{ fontSize:50,paddingLeft:40 }}>weather application</Typography>
+      </AppBar>
+    <div>
+    <BrowserRouter>
+    <div class="home">
+        <div class="left">
+            <Body/>
+        </div>
+        <div class="right">
+        <Routes>
+                <Route path="/gps" exact Component={GpsComponent}/>
+                <Route path="/city" exact Component={CityComponent}/>
+        </Routes>
+        </div>
+    </div>
+    </BrowserRouter>
+    </div>
+    
     </>
 };
