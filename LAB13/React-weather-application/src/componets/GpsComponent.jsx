@@ -1,7 +1,7 @@
 export default ()=>{
     return<>
-   <div class="responce-nav">
-    gps
-   </div>
+ <div class="gps-component">
+    <p> GPS results</p>
+ </div>
     </>
 }

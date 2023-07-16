@@ -37,4 +37,7 @@ LAB9 folder : create a custom server using http module and explore the other mod
 <li> LAB 22 folder :CRUD endpoint using Web sockets using node js</li>
 <li> LAB 23 folder :CRUD endpoint using Web sockets using websockets</li>
 <li> LAB 24 folder :CRUD endpoint using Web sockets using spring boot</li>
-<li> LAB 25 folder :chat application with some feature of realtime chat,typing info, video call,audio call,screen sharing using latest api technologies.<li>
+<li> LAB 25 folder :chat application with some feature of realtime chat,typing info, video call,audio call,screen sharing using latest api technologies.</li>
+<li>
+Lab26 folder : create Employe application 
+</li>
