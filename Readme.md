@@ -84,7 +84,7 @@ https://openweathermap.org/data/2.5/find?q=hyderabad&appid=439d4b804bc8187953eb3
 
 - ` use GPS,search by city to get weather`
 - ` analyitics visualise by chart.js`
-# LAB14 folder 
+# LAB14 folder
 ### create a TODO applciation in react with necessary components and deploy it into github.</li>
 <li> LAB15 folder : DOM using Es6 </li>
 <li> lAB 16 folder : VDOM manupulation using react</li>
@@ -99,6 +99,8 @@ https://openweathermap.org/data/2.5/find?q=hyderabad&appid=439d4b804bc8187953eb3
 <li> LAB 25 folder :chat application with some feature of realtime chat,typing info, video call,audio call,screen sharing using latest api technologies.</li>
 
 # Lab 26 
+
+[Redirect to](./LAB26/)
 
 create Employe application using react  as front end,node js (express) as backend API using Mysql database
 
