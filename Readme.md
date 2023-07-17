@@ -24,9 +24,25 @@ Responsive web application for shopping cart with registration,login,catalog and
 LAB9 folder : create a custom server using http module and explore the other modules of node js like  os,path,event</li>
 <li> LAB10 folder : develop an express web application that can interact with rest api to perform CRUD operations on student data using Post man api testing software.</li>
 <li> LAB11 folder : create a authorization endoint using JWT(JSON web token)</li>
-<li> LAB12 folder : create a react application for student management system having registration,login,contact,about pages and implement routing to navigate through these pages.</li>
-<li> LAB13 folder : create a service in react that fetches the weather information from openweather.org and the display the current and historical weather information suing graphical respresentation using chart.js</li>
-<li> LAB14 folder : create a TODO applciation in react with necessart components and deplot it into github.</li>
+<li> LAB12 folder : create a react application for student management system having registration,login,contact,about pages and implement routing to navigate through these pages.
+
+# Lab 13
+
+create a service in react that fetches the weather information from openweather.org and the display the current and historical weather information suing graphical respresentation using chart.js
+- ` Create a react application that get the weather info from OpenWeather.org API`
+```
+https://openweathermap.org/data/2.5/onecall?lat=51.5085&lon=-0.1257&units=metric&appid=439d4b804bc8187953eb36d2a8c26a02
+```
+```
+https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=9de243494c0b295cca9337e1e96b00e2
+```
+```
+https://openweathermap.org/data/2.5/find?q=hyderabad&appid=439d4b804bc8187953eb36d2a8c26a02&units=metric
+```
+- ` use GPS,search by city to get weather`
+- ` analyitics visualise by chart.js`
+# LAB14 folder 
+### create a TODO applciation in react with necessary components and deploy it into github.</li>
 <li> LAB15 folder : DOM using Es6 </li>
 <li> lAB 16 folder : VDOM manupulation using react</li>
 <li> LAB 17 folder : create a authroization endpoint using oauth2 with google account from Google cloud in Node js</li>
@@ -38,6 +54,19 @@ LAB9 folder : create a custom server using http module and explore the other mod
 <li> LAB 23 folder :CRUD endpoint using Web sockets using websockets</li>
 <li> LAB 24 folder :CRUD endpoint using Web sockets using spring boot</li>
 <li> LAB 25 folder :chat application with some feature of realtime chat,typing info, video call,audio call,screen sharing using latest api technologies.</li>
-<li>
-Lab26 folder : create Employe application 
-</li>
+
+# Lab 26 
+
+create Employe application using react  as front end,node js (express) as backend API using Mysql database
+
+- `Employee need to login`
+- `use JWT`
+- `check vulnerable to SQL injection`
+
+### services
+
+- `Employe need to login with UserID/Mail.`
+- `Employee can check working Days,leaves schedules,paid and work off.`
+- `Employee get the audit every month 1st Day.`
+- `Employee access and working details should push on Gmail.`
+

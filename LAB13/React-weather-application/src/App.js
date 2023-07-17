@@ -6,6 +6,9 @@ import { Routes,Route, BrowserRouter } from 'react-router-dom';
 import CityComponent from './componets/CityComponent';
 import './custom.css'
 import { Link } from 'react-router-dom';
+import Home from './componets/Home';
+import DocumentComp from './componets/DocumentComp';
+import AboutComponent from './componets/AboutComponent';
 export default function App(){
     return<>
    
@@ -23,6 +26,9 @@ export default function App(){
     <Routes>
         <Route path="/gps" exact Component={GpsComponent}/>
         <Route path="/city" exact Component={CityComponent}/>
+        <Route path="/" exact Component={Home}/>
+        <Route path="/docs"exact Component={DocumentComp}/>
+        <Route path="/about" exact Component={AboutComponent}/>
         </Routes>
     </BrowserRouter>
     

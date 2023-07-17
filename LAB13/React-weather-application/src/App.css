@@ -37,6 +37,8 @@
   margin-bottom: 10px;
 }
 .res{
+  background-color: #282c34;
+  color:white;
   margin-top: 20px;
 }
 .app {
@@ -44,16 +46,32 @@
   height: 100vh;
 }
 .home{
-width: 100%; 
-overflow: hidden
-}
-.left{
+  background-color: #282c34;
+  width:100%;
+  height:480px;
+  overflow:hidden;
+  color:white;
   text-align: center;
-  padding-top:80px;
-  font-size:30px;
-  width: 200px; 
-  float: left;
 }
-.right{
-padding-top: 50px;
+.home p{
+  padding-top: 120px;
+}
+.body{
+  background-color: #282c34;
+  color:white;
+}
+.docx{
+  width:100%;
+  height:480px;
+  overflow:hidden;
+  color:white;
+  text-align: center;
+  background-color: #282c34;
+}
+.root{
+  width:100%;
+  height:480px;
+  overflow:hidden;
+  color:white;
+  text-align: center;
 }

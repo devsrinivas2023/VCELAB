@@ -34,10 +34,14 @@ export default ()=>{
                  if(index==0)
                     return<>
                       <Card key ={index}sx={{ width:500,display: 'inline-block',maxWidth: 345,float:"right"}}>
-                            <Typography variant="h5" component="div">City: {i.name}<br/>latitude :{i.coord.lat}<br/>longitude :{i.coord.lon}</Typography>
-                            <Typography variant="h5" component="div">Country: {i.sys.country}</Typography>
-                            <Typography variant="h5" component="div">wind speed{i.wind.speed}<br/>degree :{i.wind.deg}</Typography>
-                            <Typography variant="h5" component="div">pressure {i.main.pressure}, sealevel:{i.main.sea_level}, ground level:{i.main.grnd_level}, <br/>Temperature{i.main.temp/10}.C</Typography>
+                      
+                      <Typography component="p" sx={{float:"right",paddingRight:12}}>Humidity :{i.main.humidity}</Typography>
+                            <Typography component="p">City: {i.name}<br/>latitude :{i.coord.lat}<br/>longitude :{i.coord.lon}</Typography>
+                            <Typography component="p">Country: {i.sys.country}</Typography>
+                            <Typography component="p">wind speed: {i.wind.speed}<br/>degree :{i.wind.deg}</Typography>
+                            <Typography component="p">pressure {i.main.pressure},<br/> sealevel:{i.main.sea_level}<br/> ground level:{i.main.grnd_level}, <br/>Temperature{i.main.temp/10}.C</Typography>
+                           
+                           
                     </Card>
                     </>
                 })}
